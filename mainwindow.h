@@ -1,3 +1,8 @@
+/**
+ * @file mainwindow.h
+ * @brief Random Rectangle Generation in a Qt Widget Main Window.
+ * @Author: Joseph Farrish
+*/
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 

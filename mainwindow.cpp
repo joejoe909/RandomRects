@@ -17,6 +17,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// Randmization occurs every time a paint event is called. Thus random 
+// rectangles are generated when the window is resized.
 void MainWindow::paintEvent(QPaintEvent *event)
 {
     std::random_device rd;
@@ -35,6 +37,7 @@ void MainWindow::paintEvent(QPaintEvent *event)
     }
 }
 
+// Users can click anywhere on the window to repaint the rectangles.
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     repaint();
