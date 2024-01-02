@@ -1,33 +1,54 @@
-CMakeList.txt.user
-    ${CMAKE_CURRENT_BINARY_DIR}/CMakeFiles
-    ${CMAKE_CURRENT_BINARY_DIR}/Makefile
-    ${CMAKE_CURRENT_BINARY_DIR}/cmake_install.cmake
-    ${CMAKE_CURRENT_BINARY_DIR}/CMakeCache.txt
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.tmp
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.old
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.new
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak2
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak3
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak4
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak5
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak6
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak7
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak8
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak9
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak10
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak11
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak12
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak13
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak14
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak15
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak16
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak17
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak18
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak19
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak20
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak21
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak22
-    ${CMAKE_CURRENT_BINARY_DIR}/CTestTestfile.cmake.bak23
-    
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
+
+# Qt unit tests
+target_wrapper.*
+
+# QtCreator
+*.autosave
+
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
+
+# QtCreator 4.8< compilation database
+compile_commands.json
+
+# QtCreator local machine specific files for imported projects
+*creator.user*
+
+*_qmlcache.qrc
