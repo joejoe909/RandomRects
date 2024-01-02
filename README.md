@@ -1,22 +1,11 @@
-#include "mainwindow.h"
-#include "./ui_mainwindow.h"
-#include "QImage"
-#include <QPainter>
-#include <QColor>
-#include <random>
+# Random Rectangles 
+#### This Qt Widgets Project uses the C++ random library to generate random rectangles within a Qt Widgets MainWindow. Users can regenerate them simply by clicking within the window or resizing. 
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
-    ui->setupUi(this);
-}
+#### Thus you can get pleasing output as such: 
+<img src="Repo Screenshot.png">
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
-
+#### Thus number of Rectangles drawn can be adjusted by changing the for loop in the paintEvent function. The geometry of the rectangles and color range can be adjusted here as well. 
+``` C++
 void MainWindow::paintEvent(QPaintEvent *event)
 {
     std::random_device rd;
@@ -35,8 +24,4 @@ void MainWindow::paintEvent(QPaintEvent *event)
     }
 }
 
-void MainWindow::mousePressEvent(QMouseEvent *event)
-{
-    repaint();
-}
-
+```
