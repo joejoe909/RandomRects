@@ -24,12 +24,12 @@ void MainWindow::paintEvent(QPaintEvent *event)
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> rnd_color(0, 255);
-    std::uniform_int_distribution<int> rnd_x(0, 1920);
-    std::uniform_int_distribution<int> rnd_y(0, 1080);
+    std::uniform_int_distribution<int> rnd_x(-500, 1920); // using negative numbers will offset bias that occurs
+    std::uniform_int_distribution<int> rnd_y(-200, 1080); // for lower values.
     std::uniform_int_distribution<int> rnd_w(0, 500);
     std::uniform_int_distribution<int> rnd_h(0, 200);
 
-    for(int i = 0; i < 1200; ++i)
+    for(int i = 0; i < 12000; ++i)
     {
         QPainter painter(this);
         painter.setPen(QColor(rnd_color(gen), rnd_color(gen), rnd_color(gen), 255));
